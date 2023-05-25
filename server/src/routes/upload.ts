@@ -15,6 +15,7 @@ export async function uploadRoutes(app: FastifyInstance) {
       },
     })
 
+    // TODO: backend should not allow image with more then 5mb
     if (!upload) {
       return reply.status(400).send()
     }
