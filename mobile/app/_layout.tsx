@@ -18,6 +18,10 @@ import { useEffect, useState } from 'react'
 
 const StyledStripes = styled(Stripes)
 
+// TODO fix create memory detail screen
+// TODO fix create edit memory screen (PUT and DELETE)
+// TODO create button on first page to see all public memories screens
+// TODO create public memories screens
 export default function Layout() {
   const [isUserAuthenticated, setIsUserAuthenticated] = useState<
     null | boolean
@@ -52,11 +56,12 @@ export default function Layout() {
         screenOptions={{
           headerShown: false,
           contentStyle: { backgroundColor: 'transparent' },
+          animation: 'fade',
         }}
       >
         <Stack.Screen name="index" redirect={isUserAuthenticated} />
-        <Stack.Screen name="new" />
         <Stack.Screen name="memories" />
+        <Stack.Screen name="new" />
       </Stack>
     </ImageBackground>
   )
