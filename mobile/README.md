@@ -1,4 +1,4 @@
-# Frontend WEB
+# Frontend Mobile
 
 ## Summary
 
@@ -14,25 +14,23 @@
 
    > npm i
 
-2. Create a `.env.local` file on your root path
-3. Go to `.env.example` and copy all content
-4. Paste on your fle `.env.local`
-5. Add your client id on variable `NEXT_PUBLIC_GITHU_CLIENT_ID=`
-6. Start project
+2. Add your IP address on variable `const IPAdress = your ip`
+3. Add your Client id on variable `const clientId = your client Id`
 
-   > npm run dev
+4. Start project
 
-7. This project use `NODE.JS version >=18`
+   > npm start
+
+5. This project use `NODE.JS version >=18`
    <br>
    <br>
 
 ## Technologies
 
-- [Next JS](https://nextjs.org/)
-- [React JS](https://react.dev/)
+- [Expo](https://docs.expo.dev/guides/authentication/#github)
+- [React Native](https://reactnative.dev/)
 - [Tailwindcss](https://v1.tailwindcss.com/)
 - [Typescript](https://www.typescriptlang.org/)
-- [JWT Token](https://jwt.io/)
 - [Prettier](https://prettier.io/)
 - [Eslint](https://eslint.org/)
   <br><br>
